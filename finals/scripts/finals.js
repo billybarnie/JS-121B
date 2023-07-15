@@ -7,7 +7,7 @@ const pokeMons = document.getElementById('pokemonData');
 
 const fetchPokemon = async () => {
     let pokemonList = [];
-    for (let i = 1; i <= 400; i++) {
+    for (let i = 1; i <= 300; i++) {
       const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
       const response = await fetch(url);
       const data = await response.json();
