@@ -10,7 +10,7 @@ const fetchPokemon = async () => {
     const pokemonList = JSON.parse(cachedData);
     getPokemon(pokemonList);
   } else {
-    const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=300');
+    const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=500');
     const data = await response.json();
 
     const pokemonUrls = data.results.map((pokemon) => pokemon.url);
